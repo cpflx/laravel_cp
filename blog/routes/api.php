@@ -22,5 +22,7 @@ Route::group(['prefix' => 'v1'], function ($q) {
     $q->group(['middleware'=>['auth.api']],function (){
         Route::get('/index', 'api\v1\IndexController@index');
     });
+
+    
 });
 
