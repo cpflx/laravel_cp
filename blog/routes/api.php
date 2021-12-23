@@ -23,6 +23,6 @@ Route::group(['prefix' => 'v1'], function ($q) {
         Route::get('/index', 'api\v1\IndexController@index');
     });
 
-    
+
 });
 
