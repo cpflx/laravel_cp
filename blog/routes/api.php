@@ -16,6 +16,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::group(['prefix' => 'v1'], function ($q) {
     //不需要验证auth
+    Route::get('/login', 'api\v1\RegisterController@login');
     Route::get('/register', 'api\v1\RegisterController@register');
 
     //需要验证auth
